@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1069242819523",
+    "project_id": "tcumi72",
+    "storage_bucket": "tcumi72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069242819523:android:85c9df06bb620cddaed376",
+        "android_client_info": {
+          "package_name": "com.example.test_lognin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069242819523-8eo3f7ljedcejdp03mtupt091g7n65i2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7t44moYvr6fwPJzLCleXgIH0BVxxhl0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069242819523-8eo3f7ljedcejdp03mtupt091g7n65i2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

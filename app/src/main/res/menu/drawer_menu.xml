@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="首頁" />
+        <item
+            android:id="@+id/AddCamera"
+            android:icon="@drawable/ic_baseline_add_circle_outline_24"
+            android:title="新增裝置" />
+        <item
+            android:id="@+id/Assist"
+            android:icon="@drawable/ic_baseline_help_24"
+            android:title="協助" />
+        <item
+            android:id="@+id/AboutAPP"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="關於" />
+
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/Video"
+            android:icon="@drawable/play_button"
+            android:title="跌倒影像" />
+        <item
+            android:id="@+id/Warning"
+            android:icon="@drawable/repeat"
+            android:title="月跌倒警示紀錄" />
+
+        <item
+            android:id="@+id/Fullscreen"
+            android:icon="@drawable/play_button"
+            android:title="全螢幕" />
+    </group>
+
+</menu>

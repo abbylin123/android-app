@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_green_100"
+    tools:context=".account.Login">
+
+    <ImageView
+        android:id="@+id/nav_user_photo"
+        android:layout_width="389dp"
+        android:layout_height="502dp"
+        android:src="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nav_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="400dp"
+        android:fontFamily="monospace"
+        android:text="Sign Up"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_user_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav_user_photo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/im_user"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/registerAccount"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toStartOf="@+id/nav_user_photo"
+        app:layout_constraintTop_toBottomOf="@+id/nav_username"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/registerAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="使用者名稱"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/registerEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="@+id/nav_user_photo"
+        app:layout_constraintTop_toBottomOf="@+id/nav_username"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/im_mail"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/email"
+        app:layout_constraintBottom_toTopOf="@+id/im_pass"
+        app:layout_constraintEnd_toStartOf="@+id/registerEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nav_user_photo"
+        app:layout_constraintTop_toBottomOf="@+id/im_user"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="信箱"
+        android:inputType="textEmailSubject"
+        app:layout_constraintBottom_toTopOf="@+id/registerPassword"
+        app:layout_constraintEnd_toEndOf="@+id/nav_user_photo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/nav_user_photo"
+        app:layout_constraintTop_toBottomOf="@+id/registerAccount"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/im_pass"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/padlock"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/registerPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/nav_user_photo"
+        app:layout_constraintTop_toBottomOf="@+id/im_mail" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="密碼(至少六碼)"
+        android:inputType="textVisiblePassword|textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/registerCheck"
+        app:layout_constraintEnd_toEndOf="@+id/nav_user_photo"
+        app:layout_constraintStart_toStartOf="@+id/nav_user_photo"
+        app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/success"
+        app:layout_constraintBottom_toTopOf="@+id/registerUserBtn"
+        app:layout_constraintEnd_toStartOf="@+id/registerCheck"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nav_user_photo" />
+
+    <EditText
+        android:id="@+id/registerCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="確認密碼"
+        android:inputType="textVisiblePassword|textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/registerUserBtn"
+        app:layout_constraintEnd_toEndOf="@+id/nav_user_photo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/nav_user_photo"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/registerUserBtn"
+        android:layout_width="179dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/rectangle_3"
+        android:text="註冊"
+        android:textSize="24sp"
+        app:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_user_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerCheck"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="登入"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_user_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerUserBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
